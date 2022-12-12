@@ -53,8 +53,12 @@ const Header = () => {
             </nav>
             <div className="right-header">
               <div>
-                <FontAwesomeIcon icon={faDiscord} />
-                <FontAwesomeIcon icon={faTwitter} />
+                <a href="#" target={"blank"}>
+                  <FontAwesomeIcon icon={faDiscord} />
+                </a>
+                <a href="#" target={"blank"}>
+                  <FontAwesomeIcon icon={faTwitter} />
+                </a>
               </div>
               <div>
                 <Button width={112} height={50} text="Sign In" />

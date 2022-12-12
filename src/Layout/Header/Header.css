@@ -79,10 +79,20 @@ nav a:hover {
 .right-header svg {
   color: white;
   font-size: 20px;
+  transition: all 0.5s ease-in-out;
+}
+.right-header svg:hover {
+  color: var(--orange);
 }
 .left-header > svg {
   display: none;
 }
+.right-header a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 1085px) {
   .left-header > svg {
     display: block;

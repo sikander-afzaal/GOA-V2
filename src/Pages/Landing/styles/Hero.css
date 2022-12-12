@@ -3,6 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 60px;
 }
 .hero-div {
   width: 100%;
@@ -33,6 +34,11 @@
   align-items: center;
   gap: 20px;
   margin-top: 10px;
+}
+@media screen and (max-width: 1161px) {
+  .hero-wrap {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (max-width: 650px) {
   .hero-div > img {
