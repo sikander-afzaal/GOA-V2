@@ -1,0 +1,47 @@
+.team-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: var(--max-width);
+  gap: 40px;
+  margin-top: 80px;
+}
+.team-div .splide__arrow--prev {
+  left: initial;
+  right: 103%;
+}
+.team-div .splide__arrow--next {
+  left: 103%;
+  right: initial;
+}
+.team-div .splide__arrow {
+  background-color: transparent;
+  opacity: 1;
+  width: 19.29px;
+  height: 30px;
+}
+@media screen and (max-width: 865px) {
+  .team-div .splide__arrow {
+    position: static;
+    width: 30px;
+    object-fit: contain;
+  }
+  .team-div .splide__arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+    top: 107%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 650px) {
+  .team-div {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+}

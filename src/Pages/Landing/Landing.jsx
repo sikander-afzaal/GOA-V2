@@ -5,6 +5,7 @@ import Features from "./Features";
 import Hero from "./Hero";
 import Nft from "./Nft";
 import Roadmap from "./Roadmap";
+import Team from "./Team";
 import Trailer from "./Trailer";
 
 const Landing = () => {
@@ -17,6 +18,7 @@ const Landing = () => {
       <Features />
       <Blockchain />
       <Roadmap />
+      <Team />
       <Faq />
     </div>
   );

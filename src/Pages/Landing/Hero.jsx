@@ -3,7 +3,7 @@ import Button from "../../Components/Button/Button";
 
 const Hero = () => {
   return (
-    <div className="container hero-wrap">
+    <div id="hero" className="container hero-wrap">
       <div className="hero-div">
         <img src="/hero-logo.png" alt="" />
         <p>

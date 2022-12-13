@@ -17,7 +17,7 @@ const Faq = () => {
     },
   ];
   return (
-    <div className="container">
+    <div id="faq" className="container">
       <div className="faq-div">
         <h2 className="trajan title">Frequently Asked Questions</h2>
         <div className="faqs">

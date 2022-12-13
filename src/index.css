@@ -28,3 +28,7 @@
 body {
   background: #0c0a08;
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-block: 50px;
+}

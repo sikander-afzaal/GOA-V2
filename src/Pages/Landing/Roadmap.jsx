@@ -2,7 +2,7 @@ import "./styles/Roadmap.css";
 
 const Roadmap = () => {
   return (
-    <div className="container roadmap-wrapp">
+    <div id="roadmap" className="container roadmap-wrapp">
       <div className="roadmap-div">
         <h2 className="title trajan">ROADMAP</h2>
         <div className="roadmap-grid">

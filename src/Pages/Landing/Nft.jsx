@@ -3,7 +3,7 @@ import "./styles/Nft.css";
 
 const Nft = () => {
   return (
-    <div className="container">
+    <div id="collection" className="container">
       <div className="nft-div">
         <h2 className="trajan title">THE GODS OF ASGARD</h2>
         <p className="sub">

@@ -4,6 +4,7 @@ import Button from "../../Components/Button/Button";
 import { faDiscord, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-scroll";
 
 const Header = () => {
   const [headerToggle, setHeaderToggle] = useState(false);
@@ -28,28 +29,72 @@ const Header = () => {
           <img src="/logo.png" alt="" />
           <div className={`inner-header ${headerToggle ? "active-nav" : ""}`}>
             <nav>
-              <a
+              <Link
+                activeClass="active-link"
+                to="hero"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
                 onClick={() => setHeaderToggle(false)}
-                className="active-link"
-                href="#"
               >
                 Home
-              </a>
-              <a onClick={() => setHeaderToggle(false)} href="#">
+              </Link>
+              <Link
+                activeClass="active-link"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                onClick={() => setHeaderToggle(false)}
+              >
                 About
-              </a>
-              <a onClick={() => setHeaderToggle(false)} href="#">
+              </Link>
+              <Link
+                activeClass="active-link"
+                to="collection"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                onClick={() => setHeaderToggle(false)}
+              >
                 Collection
-              </a>
-              <a onClick={() => setHeaderToggle(false)} href="#">
+              </Link>
+              <Link
+                activeClass="active-link"
+                to="roadmap"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                onClick={() => setHeaderToggle(false)}
+              >
                 Roadmap
-              </a>
-              <a onClick={() => setHeaderToggle(false)} href="#">
+              </Link>
+              <Link
+                activeClass="active-link"
+                to="team"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                onClick={() => setHeaderToggle(false)}
+              >
                 Team
-              </a>
-              <a onClick={() => setHeaderToggle(false)} href="#">
+              </Link>
+              <Link
+                activeClass="active-link"
+                to="faq"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                onClick={() => setHeaderToggle(false)}
+              >
                 FAQ
-              </a>
+              </Link>
             </nav>
             <div className="right-header">
               <div>
