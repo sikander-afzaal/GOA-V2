@@ -6,13 +6,6 @@ import TeamBox from "../../Components/TeamBox/TeamBox";
 const Team = () => {
   const TEAM__DATA = [
     {
-      img: "/team (1).png",
-      name: "Db009",
-      // desc: "adipiscing elit. Nullam at eros id diam venenatis egestas sit amet in enim. Integer magna quam, finibus quis elit eget, lacinia tempor enim.",
-      role: "President/CEO/Lead Developer",
-      // socials: { fb: "#", linkedin: "#", insta: "#", twitter: "#" },
-    },
-    {
       img: "/team (2).png",
       name: "Atomyc",
       // desc: "Lorem ipsu enim. Integer magna quam, finibus quis elit eget, lacinia tempor enim.",
@@ -20,24 +13,17 @@ const Team = () => {
       // socials: { fb: "#", linkedin: "#", insta: "#", twitter: "#" },
     },
     {
-      img: "/team (3).png",
-      name: "SheriffGOA",
-      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at eros id diam venenatis egestas sit amet in enim. Integer magna quam, finibus quis elit eget, lacinia tempor enim.",
-      role: "Marketing/ Developer",
+      img: "/team (1).png",
+      name: "Db009",
+      // desc: "adipiscing elit. Nullam at eros id diam venenatis egestas sit amet in enim. Integer magna quam, finibus quis elit eget, lacinia tempor enim.",
+      role: "President/CEO/Lead Developer",
       // socials: { fb: "#", linkedin: "#", insta: "#", twitter: "#" },
     },
     {
-      img: "/team (4).png",
-      name: "Walk_walsh.GoA",
+      img: "/team (8).png",
+      name: "Canine Gaming LLC",
       // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at eros id diam venenatis egestas sit amet in enim. Integer magna quam, finibus quis elit eget, lacinia tempor enim.",
-      role: "Solidity/Frontend Developer",
-      // socials: { fb: "#", linkedin: "#", insta: "#", twitter: "#" },
-    },
-    {
-      img: "/team (5).png",
-      name: "Walshy.GoA",
-      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at eros id diam venenatis egestas sit amet in enim. Integer magna quam, finibus quis elit eget, lacinia tempor enim.",
-      role: "Solidity/Frontend Developer",
+      role: "Vice President/COO",
       // socials: { fb: "#", linkedin: "#", insta: "#", twitter: "#" },
     },
     {
@@ -48,6 +34,20 @@ const Team = () => {
       // socials: { fb: "#", linkedin: "#", insta: "#", twitter: "#" },
     },
     {
+      img: "/team (9).png",
+      name: "TJ",
+      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at eros id diam venenatis egestas sit amet in enim. Integer magna quam, finibus quis elit eget, lacinia tempor enim.",
+      role: "Unity Developer",
+      // socials: { fb: "#", linkedin: "#", insta: "#", twitter: "#" },
+    },
+    {
+      img: "/team (3).png",
+      name: "SheriffGOA",
+      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at eros id diam venenatis egestas sit amet in enim. Integer magna quam, finibus quis elit eget, lacinia tempor enim.",
+      role: "Marketing/ Developer",
+      // socials: { fb: "#", linkedin: "#", insta: "#", twitter: "#" },
+    },
+    {
       img: "/team (7).png",
       name: "Tim Murosky",
       // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at eros id diam venenatis egestas sit amet in enim. Integer magna quam, finibus quis elit eget, lacinia tempor enim.",
@@ -55,10 +55,17 @@ const Team = () => {
       // socials: { fb: "#", linkedin: "#", insta: "#", twitter: "#" },
     },
     {
-      img: "/team (8).png",
-      name: "Canine Gaming LLC",
+      img: "/team (5).png",
+      name: "Walshy.GoA",
       // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at eros id diam venenatis egestas sit amet in enim. Integer magna quam, finibus quis elit eget, lacinia tempor enim.",
-      role: "Vice President/COO",
+      role: "Solidity/Frontend Developer",
+      // socials: { fb: "#", linkedin: "#", insta: "#", twitter: "#" },
+    },
+    {
+      img: "/team (4).png",
+      name: "Walk_walsh.GoA",
+      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at eros id diam venenatis egestas sit amet in enim. Integer magna quam, finibus quis elit eget, lacinia tempor enim.",
+      role: "Solidity/Frontend Developer",
       // socials: { fb: "#", linkedin: "#", insta: "#", twitter: "#" },
     },
   ];
