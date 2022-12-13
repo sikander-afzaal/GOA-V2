@@ -11,7 +11,13 @@ const Hero = () => {
           by the Avalanche blockchain.
         </p>
         <div className="btn-div">
-          <Button width={160} height={50} text="MINT NFT" cta />
+          <Button
+            url="https://mint.godsofasgardp2e.com/"
+            width={160}
+            height={50}
+            text="MINT NFT"
+            cta
+          />
           <Button text="Renting" width={160} height={50} />
         </div>
       </div>

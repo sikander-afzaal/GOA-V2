@@ -19,11 +19,14 @@ const Footer = () => {
           <div className="social-footer">
             <h3 className="trajan">Join the community</h3>
             <div className="foot-social-links">
-              <a href="#" target={"blank"}>
-                <FontAwesomeIcon icon={faTwitter} />
-              </a>
-              <a href="#" target={"blank"}>
+              <a href="https://discord.com/invite/F3B4sY5RtN" target={"blank"}>
                 <FontAwesomeIcon icon={faDiscord} />
+              </a>
+              <a
+                href="https://twitter.com/godsofasgardp2e?s=21&t=D4tQYm0V4VeQtorulTCF9g"
+                target={"blank"}
+              >
+                <FontAwesomeIcon icon={faTwitter} />
               </a>
             </div>
           </div>

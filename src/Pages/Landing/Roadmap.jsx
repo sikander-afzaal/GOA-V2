@@ -8,6 +8,7 @@ const Roadmap = () => {
         <div className="roadmap-grid">
           <h3 className="trajan road-title-1 active-title">Phase 1</h3>
           <h3 className="trajan road-title-2">Phase 2</h3>
+          <h3 className="trajan road-title-3">Phase 3</h3>
           <div className="line-roadmap"></div>
           <div className="active-line-road">
             {" "}

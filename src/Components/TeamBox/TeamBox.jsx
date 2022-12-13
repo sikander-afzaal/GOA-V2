@@ -1,25 +1,25 @@
 import "./TeamBox.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faInstagram,
-  faLinkedin,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faFacebook,
+//   faInstagram,
+//   faLinkedin,
+//   faTwitter,
+// } from "@fortawesome/free-brands-svg-icons";
 
 const TeamBox = ({
   img,
   name,
   role,
-  desc,
-  socials: { fb, linkedin, insta, twitter },
+  // desc,
+  // socials: { fb, linkedin, insta, twitter },
 }) => {
   return (
     <div className="team-box">
       <img src={img} alt="" />
       <h3 className="trajan">{name}</h3>
       <h4 className="trajan">{role}</h4>
-      <p>{desc}</p>
+      {/* <p>{desc}</p>
       <div className="team-social">
         <a href={fb} target={"blank"}>
           <FontAwesomeIcon icon={faFacebook} />
@@ -33,7 +33,7 @@ const TeamBox = ({
         <a href={twitter} target={"blank"}>
           <FontAwesomeIcon icon={faTwitter} />
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -19,7 +19,13 @@ const Features = () => {
               battlefield! This feature allows players to combine the power of
               two NFT's with the same rarity to mint a brand new NFT character.
             </p>
-            <Button cta text="More Info" width={160} height={50} />
+            <Button
+              url="https://gods-of-asgard.gitbook.io/gods-of-asgard-whitepaper-v1.0/game-economy/summoning"
+              cta
+              text="More Info"
+              width={160}
+              height={50}
+            />
           </div>
           <div className="feature-card">
             <img src="/sacrifice.png" alt="" />
@@ -29,7 +35,13 @@ const Features = () => {
               blessing. Sacrificing allows players to burn their characters to
               mint a brand new NFT character of a higher tier.
             </p>
-            <Button cta text="More Info" width={160} height={50} />
+            <Button
+              url="https://gods-of-asgard.gitbook.io/gods-of-asgard-whitepaper-v1.0/game-economy/sacrifice"
+              cta
+              text="More Info"
+              width={160}
+              height={50}
+            />
           </div>
           <div className="feature-card">
             <img src="/rent.png" alt="" />
@@ -40,7 +52,13 @@ const Features = () => {
               NFT owners can rent out their characters for others to play and
               earn a share of rewards.
             </p>
-            <Button cta text="More Info" width={160} height={50} />
+            <Button
+              url="https://gods-of-asgard.gitbook.io/gods-of-asgard-whitepaper-v1.0/game-economy/renting"
+              cta
+              text="More Info"
+              width={160}
+              height={50}
+            />
           </div>
         </div>
       </div>

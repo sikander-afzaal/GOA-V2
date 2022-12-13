@@ -11,12 +11,13 @@
   text-align: center;
 }
 .team-box img {
-  width: 277.24px;
+  width: 237.24px;
+  height: 230px;
   object-fit: contain;
 }
 .team-box h3 {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 24px;
   line-height: 38px;
   color: white;
   text-transform: uppercase;

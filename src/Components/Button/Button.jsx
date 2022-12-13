@@ -1,14 +1,24 @@
 import "./Button.css";
 
-const Button = ({ cta, text, width, height }) => {
+const Button = ({ url, cta, text, width, height }) => {
   return cta ? (
-    <button style={{ width: width, height: height }} className="cta-btn">
+    <a
+      href={url ? url : "#"}
+      target="blank"
+      style={{ width: width, height: height }}
+      className="cta-btn"
+    >
       <div>{text}</div>
-    </button>
+    </a>
   ) : (
-    <button style={{ width: width, height: height }} className="transparent">
+    <a
+      href={url ? url : "#"}
+      target="blank"
+      style={{ width: width, height: height }}
+      className="transparent"
+    >
       {text}
-    </button>
+    </a>
   );
 };
 

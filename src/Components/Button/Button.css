@@ -7,12 +7,18 @@
   color: #ffffff;
   cursor: pointer;
   background-color: transparent;
+  text-decoration: none;
+  display: grid;
+  place-items: center;
 }
 .cta-btn {
   display: grid;
   cursor: pointer;
   place-items: center;
   background-color: transparent;
+  text-decoration: none;
+  display: grid;
+  place-items: center;
   border: 2px solid var(--orange);
 }
 .cta-btn > div {

@@ -22,7 +22,13 @@ const About = () => {
             of Midgard. Ready your weapons, the battle for the nine realms
             begins now.
           </p>
-          <Button cta text="WHITEPAPER" width={160} height={50} />
+          <Button
+            url="https://gods-of-asgard.gitbook.io/gods-of-asgard-whitepaper-v1.0/"
+            cta
+            text="WHITEPAPER"
+            width={160}
+            height={50}
+          />
         </div>
         <img src="/about.png" alt="" />
       </div>

@@ -98,16 +98,28 @@ const Header = () => {
             </nav>
             <div className="right-header">
               <div>
-                <a href="#" target={"blank"}>
+                <a
+                  href="https://discord.com/invite/F3B4sY5RtN"
+                  target={"blank"}
+                >
                   <FontAwesomeIcon icon={faDiscord} />
                 </a>
-                <a href="#" target={"blank"}>
+                <a
+                  href="https://twitter.com/godsofasgardp2e?s=21&t=D4tQYm0V4VeQtorulTCF9g"
+                  target={"blank"}
+                >
                   <FontAwesomeIcon icon={faTwitter} />
                 </a>
               </div>
               <div>
                 <Button width={112} height={50} text="Sign In" />
-                <Button width={160} cta height={50} text="Play Demo" />
+                <Button
+                  url="https://godsofasgardp2e.com/downloads/goa_demo.exe"
+                  width={160}
+                  cta
+                  height={50}
+                  text="Play Demo"
+                />
               </div>
             </div>
           </div>

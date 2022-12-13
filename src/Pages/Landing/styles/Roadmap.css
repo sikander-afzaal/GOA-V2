@@ -14,7 +14,29 @@
   flex-direction: column;
   gap: 30px;
   max-width: calc(100% - 150px);
-  overflow-x: hidden;
+  overflow-x: auto;
+}
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+.roadmap-div {
+  scrollbar-width: thin;
+  scrollbar-color: #df9200 #0c0a08;
+}
+
+/* Chrome, Edge, and Safari */
+.roadmap-div::-webkit-scrollbar {
+  width: 10px;
+  height: 7px;
+}
+
+.roadmap-div::-webkit-scrollbar-track {
+  background: #0c0a08;
+}
+
+.roadmap-div::-webkit-scrollbar-thumb {
+  background-color: #df9200;
+  border-radius: 8px;
+  border: 0px none #ffffff;
 }
 .roadmap-grid {
   display: grid;
