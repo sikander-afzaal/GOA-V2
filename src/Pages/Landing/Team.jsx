@@ -41,6 +41,7 @@ const Team = () => {
             type: "loop",
             arrows: true,
             perMove: 1,
+            drag: true,
             breakpoints: {
               1245: {
                 perPage: 2,
