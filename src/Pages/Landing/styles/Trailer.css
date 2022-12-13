@@ -1,0 +1,44 @@
+.trailer-wrapp > img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 730px;
+}
+.trailer-wrapp {
+  position: relative;
+  margin-top: 60px;
+}
+.trailer-div {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 944px;
+  color: white;
+}
+.trailer-div p {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+}
+@media screen and (max-width: 1161px) {
+  .trailer-wrapp {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 1043px) {
+  .trailer-div p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .trailer-div {
+    padding-inline: 20px;
+  }
+  .trailer-wrapp > img {
+    min-height: 420px;
+  }
+}
