@@ -1,0 +1,76 @@
+.blockchain-div {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.blockchain-row {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.blockchain-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 60px;
+  width: 100%;
+}
+.blockchain-box:first-of-type {
+  background-image: url("/defi-bg.png");
+}
+.blockchain-box:last-of-type {
+  background-image: url("/ownership-bg.png");
+}
+.blockchain-box h3 {
+  color: var(--orange);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+}
+.blockchain-box p {
+  color: white;
+  font-weight: 400;
+  max-width: 600px;
+  font-size: 22px;
+  line-height: 33px;
+}
+@media screen and (max-width: 1220px) {
+  .blockchain-box {
+    padding-inline: 30px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .blockchain-row {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .blockchain-box {
+    padding: 30px 20px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .blockchain-div {
+    margin-top: 40px;
+  }
+  .blockchain-box h3 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .blockchain-box p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .blockchain-box {
+    padding: 50px 20px;
+  }
+}

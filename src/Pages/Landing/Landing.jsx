@@ -1,4 +1,5 @@
 import About from "./About";
+import Blockchain from "./Blockchain";
 import Features from "./Features";
 import Hero from "./Hero";
 import Nft from "./Nft";
@@ -12,6 +13,7 @@ const Landing = () => {
       <Trailer />
       <Nft />
       <Features />
+      <Blockchain />
     </div>
   );
 };
