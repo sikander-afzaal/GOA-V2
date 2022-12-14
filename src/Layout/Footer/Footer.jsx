@@ -7,7 +7,7 @@ const Footer = () => {
     <>
       <div className="container footer-wrap">
         <footer>
-          <img src="/foot-logo.png" alt="" />
+          <img src="/hero-logo.png" alt="" />
           <div className="foot-links">
             <a href="#hero">Home</a>
             <a href="#about">About</a>
@@ -36,7 +36,6 @@ const Footer = () => {
         <div>
           {" "}
           <p>©Gods of Asgard. All rights reserved.</p>
-          <p>cookies & privacy policy</p>
         </div>
       </div>
     </>

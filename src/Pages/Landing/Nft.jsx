@@ -14,14 +14,14 @@ const Nft = () => {
         </p>
         <div className="nft-grid">
           <NftBox
-            img="/nft-imgs/thor.png"
-            bg="/nft-imgs/thor-bg.png"
+            img="/nft-imgs/heim.png"
+            bg="/nft-imgs/heim-bg.png"
             desc={{
-              name: "Thor",
+              name: "heimdall",
               details:
-                "Son of, Odin, and the god of thunder, Thor, wields his mystical hammer, Mjolnir. He is equipped with his belt, Megingjord, bestowing him with increased strength and governance over the powerful element of lightning.",
+                "The watchman of the gods and guardian of the Bifrost; Heimdall, defends the rainbow bridge that connects all nine realms together. He is gifted with the power of prescience; a divine capacity of foresight, allowing him to see and hear across all realms, both mortal and god alike. He wields, Hofund, a sword with the ability to draw energy from other magical entities that exist within the universe.",
             }}
-          />
+          />{" "}
           <NftBox
             img="/nft-imgs/freya.png"
             bg="/nft-imgs/freya-bg.png"
@@ -32,12 +32,12 @@ const Nft = () => {
             }}
           />
           <NftBox
-            img="/nft-imgs/heim.png"
-            bg="/nft-imgs/heim-bg.png"
+            img="/nft-imgs/thor.png"
+            bg="/nft-imgs/thor-bg.png"
             desc={{
-              name: "heimdall",
+              name: "Thor",
               details:
-                "The watchman of the gods and guardian of the Bifrost; Heimdall, defends the rainbow bridge that connects all nine realms together. He is gifted with the power of prescience; a divine capacity of foresight, allowing him to see and hear across all realms, both mortal and god alike. He wields, Hofund, a sword with the ability to draw energy from other magical entities that exist within the universe.",
+                "Son of, Odin, and the god of thunder, Thor, wields his mystical hammer, Mjolnir. He is equipped with his belt, Megingjord, bestowing him with increased strength and governance over the powerful element of lightning.",
             }}
           />
           <NftBox

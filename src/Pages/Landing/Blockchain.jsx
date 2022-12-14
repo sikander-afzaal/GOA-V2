@@ -1,5 +1,4 @@
 import "./styles/Blockchain.css";
-import Button from "../../Components/Button/Button";
 
 const Blockchain = () => {
   return (
@@ -21,7 +20,6 @@ const Blockchain = () => {
               Gods of Asgard, with the ability to vote on future updates and
               improvements.
             </p>
-            <Button cta text="More Info" width={160} height={50} />
           </div>
           <div className="blockchain-box">
             <h3 className="trajan">Ownership</h3>
@@ -32,7 +30,6 @@ const Blockchain = () => {
               purchase, and trade the blockchain assets including character NFTs
               and tokens earned.
             </p>
-            <Button cta text="More Info" width={160} height={50} />
           </div>
         </div>
       </div>

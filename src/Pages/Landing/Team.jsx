@@ -33,13 +33,7 @@ const Team = () => {
       role: "Unity Developer",
       // socials: { fb: "#", linkedin: "#", insta: "#", twitter: "#" },
     },
-    {
-      img: "/team (9).png",
-      name: "TJ",
-      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at eros id diam venenatis egestas sit amet in enim. Integer magna quam, finibus quis elit eget, lacinia tempor enim.",
-      role: "Unity Developer",
-      // socials: { fb: "#", linkedin: "#", insta: "#", twitter: "#" },
-    },
+
     {
       img: "/team (3).png",
       name: "SheriffGOA",

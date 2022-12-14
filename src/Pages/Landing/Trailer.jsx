@@ -3,7 +3,7 @@ import "./styles/Trailer.css";
 const Trailer = () => {
   return (
     <div className="container trailer-wrapp">
-      <img src="/trailer-bg.png" alt="" />
+      <video src="/trailer.mp4" playsInline autoPlay muted loop />
       <div className="trailer-div">
         <p className="trajan">
           Mysterious forces have begun laying siege upon the realms of

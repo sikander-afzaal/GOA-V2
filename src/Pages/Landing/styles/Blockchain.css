@@ -15,8 +15,9 @@
 .blockchain-box {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
+  text-align: center;
   gap: 20px;
   height: 100%;
   background-repeat: no-repeat;
@@ -39,7 +40,7 @@
 }
 .blockchain-box p {
   color: white;
-  font-weight: 400;
+  font-weight: 300;
   max-width: 600px;
   font-size: 22px;
   line-height: 33px;

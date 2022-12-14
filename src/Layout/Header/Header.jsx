@@ -95,6 +95,17 @@ const Header = () => {
               >
                 FAQ
               </Link>
+              {/* <Link
+                activeClass="active-link"
+                to="faq"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                onClick={() => setHeaderToggle(false)}
+              >
+                Dashboard
+              </Link> */}
             </nav>
             <div className="right-header">
               <div>
@@ -112,7 +123,7 @@ const Header = () => {
                 </a>
               </div>
               <div>
-                <Button width={112} height={50} text="Sign In" />
+                <Button width={112} height={50} text="Login" />
                 <Button
                   url="https://godsofasgardp2e.com/downloads/goa_demo.exe"
                   width={160}
