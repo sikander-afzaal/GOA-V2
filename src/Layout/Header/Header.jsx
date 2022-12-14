@@ -4,8 +4,11 @@ import Button from "../../Components/Button/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
+import { useSelector } from "react-redux";
 
 const Header = () => {
+  const { isLoggedIn } = useSelector((state) => state.userState);
   const [headerToggle, setHeaderToggle] = useState(false);
   const [headerScroll, setHeaderScroll] = useState(false);
   useEffect(() => {
@@ -28,7 +31,7 @@ const Header = () => {
           <img src="/logo.png" alt="" />
           <div className={`inner-header ${headerToggle ? "active-nav" : ""}`}>
             <nav>
-              <Link
+              <ScrollLink
                 activeClass="active-link"
                 to="hero"
                 spy={true}
@@ -38,8 +41,8 @@ const Header = () => {
                 onClick={() => setHeaderToggle(false)}
               >
                 Home
-              </Link>
-              <Link
+              </ScrollLink>
+              <ScrollLink
                 activeClass="active-link"
                 to="about"
                 spy={true}
@@ -49,8 +52,8 @@ const Header = () => {
                 onClick={() => setHeaderToggle(false)}
               >
                 About
-              </Link>
-              <Link
+              </ScrollLink>
+              <ScrollLink
                 activeClass="active-link"
                 to="collection"
                 spy={true}
@@ -60,8 +63,8 @@ const Header = () => {
                 onClick={() => setHeaderToggle(false)}
               >
                 Collection
-              </Link>
-              <Link
+              </ScrollLink>
+              <ScrollLink
                 activeClass="active-link"
                 to="roadmap"
                 spy={true}
@@ -71,8 +74,8 @@ const Header = () => {
                 onClick={() => setHeaderToggle(false)}
               >
                 Roadmap
-              </Link>
-              <Link
+              </ScrollLink>
+              <ScrollLink
                 activeClass="active-link"
                 to="team"
                 spy={true}
@@ -82,8 +85,8 @@ const Header = () => {
                 onClick={() => setHeaderToggle(false)}
               >
                 Team
-              </Link>
-              <Link
+              </ScrollLink>
+              <ScrollLink
                 activeClass="active-link"
                 to="faq"
                 spy={true}
@@ -93,25 +96,40 @@ const Header = () => {
                 onClick={() => setHeaderToggle(false)}
               >
                 FAQ
-              </Link>
-              {/* <Link
-                activeClass="active-link"
-                to="faq"
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={500}
-                onClick={() => setHeaderToggle(false)}
-              >
-                Dashboard
-              </Link> */}
+              </ScrollLink>
+              {isLoggedIn ? (
+                <ScrollLink
+                  activeClass="active-link"
+                  to="faq"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={500}
+                  onClick={() => setHeaderToggle(false)}
+                >
+                  Dashboard
+                </ScrollLink>
+              ) : (
+                ""
+              )}
             </nav>
             <div className="right-header">
               <div>
-                <Link to="/sign-up" className="sign-up-btn">
-                  Sign Up
-                </Link>
-                <Button link="/sign-in" width={112} height={50} text="Login" />
+                {!isLoggedIn ? (
+                  <>
+                    <Link to="/sign-up" className="sign-up-btn">
+                      Sign Up
+                    </Link>
+                    <Button
+                      link="/sign-in"
+                      width={112}
+                      height={50}
+                      text="Login"
+                    />
+                  </>
+                ) : (
+                  ""
+                )}
                 <Button
                   url="https://godsofasgardp2e.com/downloads/goa_demo.exe"
                   width={160}

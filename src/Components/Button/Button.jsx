@@ -8,8 +8,9 @@ const Button = ({ link, url, cta, text, width, height }) => {
     !url ? (
       <button
         onClick={() => {
-          if (!link) return;
-          navigate(link);
+          if (link) {
+            navigate(link);
+          }
         }}
         target="blank"
         style={{ width: width, height: height }}
@@ -29,9 +30,10 @@ const Button = ({ link, url, cta, text, width, height }) => {
     )
   ) : !url ? (
     <button
-      onClick={() => {
-        if (!link) return;
-        navigate(link);
+      onClick={(e) => {
+        if (link) {
+          navigate(link);
+        }
       }}
       target="blank"
       style={{ width: width, height: height }}

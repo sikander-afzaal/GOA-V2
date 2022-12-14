@@ -12,19 +12,21 @@ import Trailer from "./Trailer";
 
 const Landing = () => {
   return (
-    <div>
+    <>
       <Header />
-      <Hero />
-      <About />
-      <Trailer />
-      <Nft />
-      <Features />
-      <Blockchain />
-      <Roadmap />
-      <Team />
-      <Faq />
+      <div>
+        <Hero />
+        <About />
+        <Trailer />
+        <Nft />
+        <Features />
+        <Blockchain />
+        <Roadmap />
+        <Team />
+        <Faq />
+      </div>
       <Footer />
-    </div>
+    </>
   );
 };
 
