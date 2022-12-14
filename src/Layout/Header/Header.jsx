@@ -98,17 +98,13 @@ const Header = () => {
                 FAQ
               </ScrollLink>
               {isLoggedIn ? (
-                <ScrollLink
-                  activeClass="active-link"
-                  to="faq"
-                  spy={true}
-                  smooth={true}
-                  offset={-50}
-                  duration={500}
+                <Link
+                  className="mob-dash-link"
+                  to={"/"}
                   onClick={() => setHeaderToggle(false)}
                 >
                   Dashboard
-                </ScrollLink>
+                </Link>
               ) : (
                 ""
               )}
@@ -128,7 +124,13 @@ const Header = () => {
                     />
                   </div>
                 ) : (
-                  ""
+                  <Link
+                    className="dash-link"
+                    to={"/"}
+                    onClick={() => setHeaderToggle(false)}
+                  >
+                    Dashboard
+                  </Link>
                 )}
                 <Button
                   url="https://godsofasgardp2e.com/downloads/goa_demo.exe"

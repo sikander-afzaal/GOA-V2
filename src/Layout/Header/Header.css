@@ -41,7 +41,8 @@ nav {
   align-items: center;
   gap: 30px;
 }
-nav a {
+nav a,
+.dash-link {
   color: white;
   font-weight: 400;
   font-size: 16px;
@@ -104,6 +105,9 @@ nav a:hover {
   align-items: center;
   gap: 20px;
 }
+.mob-dash-link {
+  display: none;
+}
 @media screen and (max-width: 1085px) {
   .left-header > svg {
     display: block;
@@ -154,6 +158,12 @@ nav a:hover {
   }
   nav a:first-of-type {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .dash-link {
+    display: none !important;
+  }
+  .mob-dash-link {
+    display: flex;
   }
   nav a {
     padding: 20px 0px;
