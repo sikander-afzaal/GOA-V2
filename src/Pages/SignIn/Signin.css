@@ -1,0 +1,134 @@
+.login-wrapp {
+  background-image: url("/account-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding-inline: 20px;
+  padding-block: 50px;
+  background-position: center;
+}
+.sign-in-div {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1136px;
+  background: #151412;
+  overflow: hidden;
+  max-height: 718px;
+}
+.left-wrapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  position: relative;
+}
+.left-signIn {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  max-width: 450px;
+}
+.left-signIn h2 {
+  color: var(--orange);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 58px;
+}
+.left-signIn form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 20px;
+  width: 100%;
+}
+.input-div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.input-div label {
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  transition: all 0.5s ease-in-out;
+}
+.input-div input {
+  width: 100%;
+  height: 41px;
+  background: #110f06;
+  border: 0.375px solid #ffd37e;
+  border-radius: 2.91233px;
+  padding: 10px 18px;
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+}
+.input-div input:focus {
+  outline: none;
+  border-color: var(--orange);
+}
+.input-div:focus-within label {
+  color: var(--orange);
+}
+.left-signIn form a {
+  color: var(--orange);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: -20px;
+}
+.left-signIn > p {
+  position: absolute;
+  left: 60px;
+  bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+}
+.left-signIn > p a {
+  color: var(--orange);
+  text-decoration: underline;
+}
+.right-sign-in {
+  flex: 1;
+}
+.right-sign-in img {
+  width: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 1164px) {
+  .right-sign-in {
+    display: none;
+  }
+  .left-signIn {
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    max-width: none;
+    gap: 40px;
+  }
+  .left-signIn > p {
+    position: static;
+  }
+}
+@media screen and (max-width: 600px) {
+  .left-signIn h2 {
+    font-size: 30px;
+  }
+  .login-wrapp {
+    padding: 0px;
+  }
+  .left-signIn form {
+    align-items: center;
+    margin-top: 0px;
+  }
+}

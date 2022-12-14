@@ -123,7 +123,7 @@ const Header = () => {
                 </a>
               </div>
               <div>
-                <Button width={112} height={50} text="Login" />
+                <Button link="/sign-in" width={112} height={50} text="Login" />
                 <Button
                   url="https://godsofasgardp2e.com/downloads/goa_demo.exe"
                   width={160}

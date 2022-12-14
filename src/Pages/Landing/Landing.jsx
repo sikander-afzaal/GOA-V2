@@ -1,3 +1,5 @@
+import Header from "../../Layout/Header/Header";
+import Footer from "../../Layout/Footer/Footer";
 import About from "./About";
 import Blockchain from "./Blockchain";
 import Faq from "./Faq";
@@ -11,6 +13,7 @@ import Trailer from "./Trailer";
 const Landing = () => {
   return (
     <div>
+      <Header />
       <Hero />
       <About />
       <Trailer />
@@ -20,6 +23,7 @@ const Landing = () => {
       <Roadmap />
       <Team />
       <Faq />
+      <Footer />
     </div>
   );
 };

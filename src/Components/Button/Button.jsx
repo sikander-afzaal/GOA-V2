@@ -1,18 +1,47 @@
 import "./Button.css";
+import { useNavigate } from "react-router-dom";
 
-const Button = ({ url, cta, text, width, height }) => {
+const Button = ({ link, url, cta, text, width, height }) => {
+  const navigate = useNavigate();
+
   return cta ? (
-    <a
-      href={url ? url : "#"}
+    !url ? (
+      <button
+        onClick={() => {
+          if (!link) return;
+          navigate(link);
+        }}
+        target="blank"
+        style={{ width: width, height: height }}
+        className="cta-btn"
+      >
+        <div>{text}</div>
+      </button>
+    ) : (
+      <a
+        href={url}
+        target="blank"
+        style={{ width: width, height: height }}
+        className="cta-btn"
+      >
+        <div>{text}</div>
+      </a>
+    )
+  ) : !url ? (
+    <button
+      onClick={() => {
+        if (!link) return;
+        navigate(link);
+      }}
       target="blank"
       style={{ width: width, height: height }}
-      className="cta-btn"
+      className="transparent"
     >
-      <div>{text}</div>
-    </a>
+      {text}
+    </button>
   ) : (
     <a
-      href={url ? url : "#"}
+      href={url}
       target="blank"
       style={{ width: width, height: height }}
       className="transparent"
