@@ -98,7 +98,12 @@ nav a:hover {
   justify-content: center;
   align-items: center;
 }
-
+.sign-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 @media screen and (max-width: 1085px) {
   .left-header > svg {
     display: block;
@@ -179,7 +184,14 @@ nav a:hover {
     cursor: pointer;
   }
   .right-header > div {
-    gap: 10px;
+    gap: 40px;
+    flex-direction: column;
+  }
+  .sign-div > a {
+    width: 100%;
+  }
+  .sign-div {
+    width: 100%;
   }
 }
 @media screen and (max-width: 520px) {

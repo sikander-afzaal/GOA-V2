@@ -116,7 +116,7 @@ const Header = () => {
             <div className="right-header">
               <div>
                 {!isLoggedIn ? (
-                  <>
+                  <div className="sign-div">
                     <Link to="/sign-up" className="sign-up-btn">
                       Sign Up
                     </Link>
@@ -126,7 +126,7 @@ const Header = () => {
                       height={50}
                       text="Login"
                     />
-                  </>
+                  </div>
                 ) : (
                   ""
                 )}
