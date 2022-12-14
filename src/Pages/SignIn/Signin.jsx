@@ -1,11 +1,16 @@
 import { Link } from "react-router-dom";
 import Button from "../../Components/Button/Button";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Signin.css";
 
 const Signin = () => {
   return (
     <div className="container login-wrapp">
       <div className="sign-in-div">
+        <Link to={"/"} className="back">
+          <FontAwesomeIcon icon={faArrowLeft} />
+        </Link>
         <div className="left-wrapp">
           <div className="left-signIn">
             <h2 className="trajan">WELCOME BACK</h2>

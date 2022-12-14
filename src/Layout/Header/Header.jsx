@@ -1,7 +1,6 @@
 import "./Header.css";
 import { useEffect, useState } from "react";
 import Button from "../../Components/Button/Button";
-import { faDiscord, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
@@ -108,20 +107,6 @@ const Header = () => {
               </Link> */}
             </nav>
             <div className="right-header">
-              {/* <div>
-                <a
-                  href="https://discord.com/invite/F3B4sY5RtN"
-                  target={"blank"}
-                >
-                  <FontAwesomeIcon icon={faDiscord} />
-                </a>
-                <a
-                  href="https://twitter.com/godsofasgardp2e?s=21&t=D4tQYm0V4VeQtorulTCF9g"
-                  target={"blank"}
-                >
-                  <FontAwesomeIcon icon={faTwitter} />
-                </a>
-              </div> */}
               <div>
                 <Link to="/sign-up" className="sign-up-btn">
                   Sign Up

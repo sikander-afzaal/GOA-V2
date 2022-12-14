@@ -7,6 +7,15 @@
   padding-block: 50px;
   background-position: center;
 }
+.sign-in-div > .back {
+  color: var(--orange);
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  cursor: pointer;
+  font-size: 25px;
+  z-index: 20;
+}
 .sign-in-div {
   display: flex;
   justify-content: center;
@@ -16,6 +25,7 @@
   background: #151412;
   overflow: hidden;
   max-height: 718px;
+  position: relative;
 }
 .left-wrapp {
   display: flex;

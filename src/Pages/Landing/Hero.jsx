@@ -1,5 +1,7 @@
 import "./styles/Hero.css";
 import Button from "../../Components/Button/Button";
+import { faDiscord, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Hero = () => {
   return (
@@ -19,6 +21,17 @@ const Hero = () => {
             cta
           />
           <Button text="Renting" width={160} height={50} />
+        </div>
+        <div className="social-hero">
+          <a href="https://discord.com/invite/F3B4sY5RtN" target={"blank"}>
+            <FontAwesomeIcon icon={faDiscord} />
+          </a>
+          <a
+            href="https://twitter.com/godsofasgardp2e?s=21&t=D4tQYm0V4VeQtorulTCF9g"
+            target={"blank"}
+          >
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
         </div>
       </div>
     </div>

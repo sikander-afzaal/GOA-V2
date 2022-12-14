@@ -6,24 +6,25 @@ import TeamBox from "../../Components/TeamBox/TeamBox";
 const Team = () => {
   const TEAM__DATA = [
     {
-      img: "/team (2).png",
-      name: "Atomyc",
-      // desc: "Lorem ipsu enim. Integer magna quam, finibus quis elit eget, lacinia tempor enim.",
-      role: "Project and Community Manager",
-      // socials: { fb: "#", linkedin: "#", insta: "#", twitter: "#" },
-    },
-    {
       img: "/team (1).png",
       name: "Db009",
       // desc: "adipiscing elit. Nullam at eros id diam venenatis egestas sit amet in enim. Integer magna quam, finibus quis elit eget, lacinia tempor enim.",
       role: "President/CEO/Lead Developer",
       // socials: { fb: "#", linkedin: "#", insta: "#", twitter: "#" },
     },
+
     {
       img: "/team (8).png",
       name: "Canine Gaming LLC",
       // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at eros id diam venenatis egestas sit amet in enim. Integer magna quam, finibus quis elit eget, lacinia tempor enim.",
       role: "Vice President/COO",
+      // socials: { fb: "#", linkedin: "#", insta: "#", twitter: "#" },
+    },
+    {
+      img: "/team (2).png",
+      name: "Atomyc",
+      // desc: "Lorem ipsu enim. Integer magna quam, finibus quis elit eget, lacinia tempor enim.",
+      role: "Project and Community Manager",
       // socials: { fb: "#", linkedin: "#", insta: "#", twitter: "#" },
     },
     {
