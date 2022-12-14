@@ -18,7 +18,7 @@ const TeamBox = ({
     <div className="team-box">
       <img src={img} alt="" />
       <h3 className="trajan">{name}</h3>
-      <h4 className="trajan">{role}</h4>
+      <h4>{role}</h4>
       {/* <p>{desc}</p>
       <div className="team-social">
         <a href={fb} target={"blank"}>

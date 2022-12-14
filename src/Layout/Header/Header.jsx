@@ -4,7 +4,7 @@ import Button from "../../Components/Button/Button";
 import { faDiscord, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [headerToggle, setHeaderToggle] = useState(false);
@@ -108,7 +108,7 @@ const Header = () => {
               </Link> */}
             </nav>
             <div className="right-header">
-              <div>
+              {/* <div>
                 <a
                   href="https://discord.com/invite/F3B4sY5RtN"
                   target={"blank"}
@@ -121,8 +121,11 @@ const Header = () => {
                 >
                   <FontAwesomeIcon icon={faTwitter} />
                 </a>
-              </div>
+              </div> */}
               <div>
+                <Link to="/sign-up" className="sign-up-btn">
+                  Sign Up
+                </Link>
                 <Button link="/sign-in" width={112} height={50} text="Login" />
                 <Button
                   url="https://godsofasgardp2e.com/downloads/goa_demo.exe"

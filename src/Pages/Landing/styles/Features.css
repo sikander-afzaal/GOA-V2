@@ -49,6 +49,10 @@
   height: 110px;
   object-fit: contain;
 }
+.feature-card a,
+.feature-card button {
+  margin-top: auto;
+}
 @media screen and (max-width: 1100px) {
   .feat-wrap {
     padding: 70px 0px;

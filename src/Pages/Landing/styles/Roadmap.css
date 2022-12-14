@@ -21,6 +21,7 @@
 .roadmap-div {
   scrollbar-width: thin;
   scrollbar-color: #df9200 #0c0a08;
+  padding-bottom: 20px;
 }
 
 /* Chrome, Edge, and Safari */
@@ -118,6 +119,7 @@
   grid-column: 4/5;
   grid-row: 3/4;
 }
+
 .roadmap-grid > h3 {
   font-weight: 700;
   font-size: 48px;

@@ -10,10 +10,6 @@ const Roadmap = () => {
           <h3 className="trajan road-title-2">Phase 2</h3>
           <h3 className="trajan road-title-3">Phase 3</h3>
           <div className="line-roadmap"></div>
-          <div className="active-line-road">
-            {" "}
-            <img src="/roadmap-pointer.png" alt="" className="pointer" />
-          </div>
 
           <div className="road-box roadbox-1">
             <ul>
@@ -40,6 +36,10 @@ const Roadmap = () => {
               <li>VR update</li>
               <li>and more...</li>
             </ul>
+          </div>
+          <div className="active-line-road">
+            {" "}
+            <img src="/roadmap-pointer.png" alt="" className="pointer" />
           </div>
         </div>
       </div>
