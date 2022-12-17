@@ -305,6 +305,11 @@
   font-size: 14.15px;
   outline: 1px solid var(--orange);
   outline-offset: 3px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.swap-btn:hover {
+  background-color: var(--orange);
 }
 .nft-row-dash {
   display: flex;

@@ -6,8 +6,10 @@ const DashboardHero = () => {
       <div className="dash-hero-div">
         <div className="left-dash-hero">
           <div className="dash-filters">
-            <button className="active-filter-dash">Rent</button>
-            <button>Mint</button>
+            <a href="https://mint.godsofasgardp2e.com/" target={"blank"}>
+              Mint
+            </a>
+            <button>Rent</button>
             <button>Sacrifice</button>
             <button>Summon</button>
           </div>
