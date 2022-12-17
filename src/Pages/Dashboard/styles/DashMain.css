@@ -199,6 +199,42 @@
 .nft-drop {
   position: relative;
 }
+.nft-drop-main {
+  position: absolute;
+  z-index: 30;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: var(--orange);
+  min-width: 100%;
+  right: 0;
+  top: 120%;
+  padding: 0px 0px;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 150px;
+}
+.drop-item {
+  cursor: pointer;
+  border-bottom: 2px solid #110f06;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 8px;
+  transition: all 0.2s ease-in-out;
+}
+.drop-item:hover {
+  background-color: #c28007;
+}
+.drop-item:hover p {
+  color: white;
+}
+.nft-drop-main .drop-item:last-child {
+  border: none;
+}
 .nft-selector {
   display: flex;
   border: none;
@@ -211,19 +247,28 @@
   cursor: pointer;
   background: var(--orange);
 }
-.nft-selector img {
+.nft-selector img,
+.drop-item img {
   width: 21px;
   height: 21px;
   object-fit: contain;
   border-radius: 50%;
 }
-.nft-selector p {
+.nft-selector p,
+.drop-item p {
   font-weight: 500;
   font-size: 16.2px;
   line-height: 24px;
   letter-spacing: 0.01em;
+  transition: all 0.2s ease-in-out;
   text-transform: uppercase;
   color: #110f06;
+}
+.nft-selector svg {
+  transition: all 0.4s ease-in-out;
+}
+.rotate {
+  transform: rotate(180deg);
 }
 .swap-ico {
   position: absolute;

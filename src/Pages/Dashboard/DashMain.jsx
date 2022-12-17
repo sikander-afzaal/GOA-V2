@@ -10,11 +10,13 @@ const DashMain = () => {
     coin: "AVAX",
     img: "/dashboard/avax.png",
     value: "0.00",
+    dropOpen: false,
   });
   const [swapSecondtData, setSwapSecondtData] = useState({
     coin: "ASG",
     img: "/dashboard/asg.png",
     value: "0.00",
+    dropOpen: false,
   });
 
   const swapFunc = () => {
@@ -68,13 +70,64 @@ const DashMain = () => {
                   </div>
                   <button className="max">MAX</button>
                 </div>
+                {/* //first drop down starts here ---------------------- */}
                 <div className="nft-drop">
-                  <button className="nft-selector">
+                  <button
+                    onClick={() => {
+                      setSwapSecondtData((prev) => {
+                        return { ...prev, dropOpen: false };
+                      });
+                      setSwapFirstData((prev) => {
+                        return { ...prev, dropOpen: !prev.dropOpen };
+                      });
+                    }}
+                    className="nft-selector"
+                  >
                     <img src={swapFirstData.img} alt="" />
                     <p>{swapFirstData.coin}</p>
-                    <FontAwesomeIcon icon={faChevronDown} />
+                    <FontAwesomeIcon
+                      className={`${swapFirstData.dropOpen ? "rotate" : ""}`}
+                      icon={faChevronDown}
+                    />
                   </button>
+                  {swapFirstData.dropOpen && (
+                    <div className="nft-drop-main">
+                      <div
+                        onClick={(e) => {
+                          setSwapFirstData((prev) => {
+                            return {
+                              ...prev,
+                              dropOpen: false,
+                              img: "/dashboard/asg.png",
+                              coin: "ASG",
+                            };
+                          });
+                        }}
+                        className="drop-item"
+                      >
+                        <img src="/dashboard/asg.png" alt="" />
+                        <p>ASG</p>
+                      </div>
+                      <div
+                        onClick={() => {
+                          setSwapFirstData((prev) => {
+                            return {
+                              ...prev,
+                              dropOpen: false,
+                              img: "/dashboard/avax.png",
+                              coin: "AVAX",
+                            };
+                          });
+                        }}
+                        className="drop-item"
+                      >
+                        <img src="/dashboard/avax.png" alt="" />
+                        <p>AVAX</p>
+                      </div>
+                    </div>
+                  )}
                 </div>
+                {/* {------------------------------------------------------------} */}
               </div>
               <img
                 onClick={swapFunc}
@@ -100,13 +153,64 @@ const DashMain = () => {
                   </div>
                   <button className="max">MAX</button>
                 </div>
+                {/* //second drop down starts here ---------------------- */}
                 <div className="nft-drop">
-                  <button className="nft-selector">
+                  <button
+                    onClick={() => {
+                      setSwapFirstData((prev) => {
+                        return { ...prev, dropOpen: false };
+                      });
+                      setSwapSecondtData((prev) => {
+                        return { ...prev, dropOpen: !prev.dropOpen };
+                      });
+                    }}
+                    className="nft-selector"
+                  >
                     <img src={swapSecondtData.img} alt="" />
                     <p>{swapSecondtData.coin}</p>
-                    <FontAwesomeIcon icon={faChevronDown} />
+                    <FontAwesomeIcon
+                      className={`${swapSecondtData.dropOpen ? "rotate" : ""}`}
+                      icon={faChevronDown}
+                    />
                   </button>
+                  {swapSecondtData.dropOpen && (
+                    <div className="nft-drop-main">
+                      <div
+                        onClick={() => {
+                          setSwapSecondtData((prev) => {
+                            return {
+                              ...prev,
+                              dropOpen: false,
+                              img: "/dashboard/asg.png",
+                              coin: "ASG",
+                            };
+                          });
+                        }}
+                        className="drop-item"
+                      >
+                        <img src="/dashboard/asg.png" alt="" />
+                        <p>ASG</p>
+                      </div>
+                      <div
+                        onClick={() => {
+                          setSwapSecondtData((prev) => {
+                            return {
+                              ...prev,
+                              dropOpen: false,
+                              img: "/dashboard/avax.png",
+                              coin: "AVAX",
+                            };
+                          });
+                        }}
+                        className="drop-item"
+                      >
+                        <img src="/dashboard/avax.png" alt="" />
+                        <p>AVAX</p>
+                      </div>
+                    </div>
+                  )}
                 </div>
+                {/* {------------------------------------------------------------} */}
               </div>
             </div>
             <div className="bottom-swap-div">
