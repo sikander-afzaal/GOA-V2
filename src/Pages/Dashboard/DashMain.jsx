@@ -1,7 +1,9 @@
+import { useState } from "react";
+import "./styles/DashMain.css";
+import NftBoxDash from "../../Components/NftBoxDash/NftBoxDash";
+import Button from "../../Components/Button/Button";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./styles/DashMain.css";
-import { useState } from "react";
 
 const DashMain = () => {
   const [swapFirstData, setSwapFirstData] = useState({
@@ -30,12 +32,13 @@ const DashMain = () => {
             <h2 className="trajan">Recently used nft</h2>
             <div className="nft-cont">
               <img src="/dashboard/nft1.png" alt="" />
+              <img src="/dashboard/nft2.png" alt="" />
+              <img src="/dashboard/nft3.png" alt="" />
+              <img src="/dashboard/nft4.png" alt="" />
               <img src="/dashboard/nft1.png" alt="" />
-              <img src="/dashboard/nft1.png" alt="" />
-              <img src="/dashboard/nft1.png" alt="" />
-              <img src="/dashboard/nft1.png" alt="" />
-              <img src="/dashboard/nft1.png" alt="" />
-              <img src="/dashboard/nft1.png" alt="" />
+              <img src="/dashboard/nft2.png" alt="" />
+              <img src="/dashboard/nft3.png" alt="" />
+              <img src="/dashboard/nft4.png" alt="" />
             </div>
           </div>
           <div className="nft-swap-div">
@@ -117,6 +120,33 @@ const DashMain = () => {
             </div>
           </div>
         </div>
+        <div className="nft-row-dash">
+          <NftBoxDash
+            name="Thor"
+            img="/dashboard/thor.png"
+            desc="The great & powerful all-father and king of Asgard."
+            price="$120"
+          />
+          <NftBoxDash
+            name="Freya"
+            img="/dashboard/freya.png"
+            desc="Queen of the valkyries and goddess of love and war, Freya"
+            price="$120"
+          />
+          <NftBoxDash
+            name="heimdall"
+            img="/dashboard/heim.png"
+            desc="The great & powerful all-father and king of Asgard."
+            price="$120"
+          />
+          <NftBoxDash
+            name="odin"
+            img="/dashboard/odin.png"
+            desc="The great & powerful all-father and king of Asgard."
+            price="$120"
+          />
+        </div>
+        <Button cta text="View Characters" width={190} height={60} />
       </div>
     </div>
   );

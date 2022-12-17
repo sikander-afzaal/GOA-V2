@@ -4,6 +4,7 @@
   left: 0;
   background: rgba(0, 0, 0, 0.75);
   height: 94px;
+  z-index: 60;
 }
 .dash-header header {
   display: flex;
