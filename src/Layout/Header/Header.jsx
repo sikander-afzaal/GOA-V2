@@ -100,7 +100,7 @@ const Header = () => {
               {isLoggedIn ? (
                 <Link
                   className="mob-dash-link"
-                  to={"/"}
+                  to={"/dashboard"}
                   onClick={() => setHeaderToggle(false)}
                 >
                   Dashboard
@@ -126,7 +126,7 @@ const Header = () => {
                 ) : (
                   <Link
                     className="dash-link"
-                    to={"/"}
+                    to={"/dashboard"}
                     onClick={() => setHeaderToggle(false)}
                   >
                     Dashboard

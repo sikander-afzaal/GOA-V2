@@ -1,0 +1,69 @@
+.dash-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  height: 94px;
+}
+.dash-header header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: var(--max-width);
+  gap: 20px;
+  width: 100%;
+  padding-inline: 20px;
+}
+.dash-links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  text-align: center;
+}
+.dash-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+}
+.dash-header header > button {
+  width: 237px;
+  height: 54px;
+  border: 2px solid #df9200;
+  border-radius: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px;
+  padding: 12px 20px 12px 24px;
+  background-color: transparent;
+  color: white;
+}
+@media screen and (max-width: 655px) {
+  .dash-links {
+    width: max-content;
+    gap: 20px;
+  }
+  .dash-header header {
+    justify-content: space-between;
+  }
+  .dash-links a {
+    font-size: 16px;
+  }
+  .dash-header header > button {
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    border-radius: 50%;
+    justify-content: center;
+  }
+  .dash-header header > button img {
+    width: 60%;
+    object-fit: contain;
+  }
+  .dash-header header > button p {
+    display: none;
+  }
+}
