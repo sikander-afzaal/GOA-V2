@@ -65,8 +65,8 @@
   align-items: center;
   flex-direction: column;
   background: #130c18;
-  width: 210.27px;
-  height: 210.27px;
+  width: 190px;
+  height: 190px;
   isolation: isolate;
   position: relative;
 }
@@ -82,7 +82,7 @@
 }
 .inner-dash h2 {
   font-weight: 700;
-  font-size: 23.5px;
+  font-size: 22.5px;
   line-height: 34px;
   text-align: center;
   width: min-content;
@@ -91,7 +91,7 @@
 }
 .inner-dash h3 {
   font-weight: 600;
-  font-size: 65px;
+  font-size: 60px;
   line-height: 1;
   color: #ff940c;
 }
