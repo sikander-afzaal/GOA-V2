@@ -85,9 +85,12 @@
   border: 1px solid #ffd37e;
 }
 .nft-cont img {
-  width: 107px;
-  height: 107px;
+  width: 100px;
+  height: 100px;
   object-fit: fill;
+  border: 3px solid gray;
+  border-radius: 13px;
+  padding: 4px;
 }
 .nft-swap-div {
   gap: 15px;
@@ -279,7 +282,11 @@
   width: 140.01px;
   height: 140.01px;
   object-fit: contain;
+  transition: all 0.3s ease-in-out;
   border-radius: 50%;
+}
+.swap-ico:hover {
+  transform: translate(-50%, -50%) scale(1.1);
 }
 .bottom-swap-div {
   display: flex;

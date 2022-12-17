@@ -9,7 +9,7 @@
 .dash-hero-div {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 200px;
   padding-inline: 20px;
   width: 100%;

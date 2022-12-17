@@ -1,6 +1,7 @@
 import DashboardHeader from "./DashboardHeader";
 import DashboardHero from "./DashboardHero";
 import DashMain from "./DashMain";
+import Footer from "../../Layout/Footer/Footer";
 
 const Dashboard = () => {
   return (
@@ -8,6 +9,7 @@ const Dashboard = () => {
       <DashboardHeader />
       <DashboardHero />
       <DashMain />
+      <Footer />
     </div>
   );
 };

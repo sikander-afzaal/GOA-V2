@@ -6,6 +6,9 @@
   height: 94px;
   z-index: 60;
 }
+.dash-header header > a img {
+  height: 80px;
+}
 .dash-header header {
   display: flex;
   justify-content: center;
@@ -18,18 +21,32 @@
 .dash-links {
   width: 100%;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.inner-dash-links {
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 60px;
-  text-align: center;
+  width: 100%;
 }
 .dash-links a {
   color: white;
   text-decoration: none;
   font-weight: 400;
   font-size: 20px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
 }
-.dash-header header > button {
+.dash-links .active-link {
+  color: var(--orange);
+}
+.dash-links a:hover {
+  color: var(--orange);
+}
+.dash-links button {
   width: 237px;
   height: 54px;
   border: 2px solid #df9200;
@@ -42,29 +59,52 @@
   background-color: transparent;
   color: white;
 }
-@media screen and (max-width: 655px) {
-  .dash-links {
-    width: max-content;
-    gap: 20px;
+.dash-header header svg {
+  display: none;
+}
+@media screen and (max-width: 851px) {
+  .dash-header header svg {
+    display: block;
+    color: white;
+    font-size: 25px;
+    position: relative;
+    z-index: 85;
   }
   .dash-header header {
     justify-content: space-between;
   }
-  .dash-links a {
-    font-size: 16px;
+  .dash-links {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 84;
+    position: fixed;
+    top: 0;
+    right: -800px;
+    width: 100%;
+    gap: 30px;
+    padding: 6rem 2rem;
+    overflow-y: auto;
+    max-width: 400px;
+    height: 100%;
+    transition: all 1s ease-in-out;
+    background-color: #0c0a08;
   }
-  .dash-header header > button {
-    width: 50px;
-    height: 50px;
-    padding: 0px;
-    border-radius: 50%;
-    justify-content: center;
+  .active-dash-header {
+    right: 0;
   }
-  .dash-header header > button img {
-    width: 60%;
-    object-fit: contain;
+  .inner-dash-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
   }
-  .dash-header header > button p {
-    display: none;
+}
+@media screen and (max-width: 420px) {
+  .inner-dash-links {
+    align-items: center;
+  }
+  .dash-links {
+    max-width: 100%;
+    align-items: center;
   }
 }

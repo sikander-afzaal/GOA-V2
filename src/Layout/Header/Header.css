@@ -51,9 +51,14 @@ nav a,
   text-decoration: none;
   cursor: pointer;
 }
-nav .active-link {
+
+nav .active-link,
+.dash-link {
   color: var(--orange);
   font-weight: 600;
+}
+.dash-link:hover {
+  color: white;
 }
 .active-link:before {
   content: "";
