@@ -9,12 +9,12 @@ const Footer = () => {
         <footer>
           <img src="/hero-logo.png" alt="" />
           <div className="foot-links">
-            <a href="#hero">Home</a>
-            <a href="#about">About</a>
-            <a href="#collection">Collection</a>
-            <a href="#roadmap">Roadmap</a>
-            <a href="#team">Team</a>
-            <a href="#faq">FAQ</a>
+            <a href="/#hero">Home</a>
+            <a href="/#about">About</a>
+            <a href="/#collection">Collection</a>
+            <a href="/#roadmap">Roadmap</a>
+            <a href="/#team">Team</a>
+            <a href="/#faq">FAQ</a>
           </div>
           <div className="social-footer">
             <h3 className="trajan">Join the community</h3>
