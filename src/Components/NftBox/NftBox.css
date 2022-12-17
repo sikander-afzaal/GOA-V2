@@ -1,72 +1,83 @@
-.nft-box {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+.wrapper-character {
+  overflow: hidden;
   width: 100%;
-  flex-direction: column;
+  height: auto;
   position: relative;
-  isolation: isolate;
-  max-width: 500px;
-  height: 100%;
+  max-width: 380px;
 }
-.nft-bg {
+.pop-div {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 85% 15%;
+  place-items: center;
+  height: 93%;
+  width: 93% !important;
+  clip-path: polygon(
+    10% 0,
+    90% 0,
+    100% 10%,
+    100% 90%,
+    90% 100%,
+    10% 100%,
+    0 90%,
+    0 10%
+  );
   position: absolute;
-  left: 0%;
-  bottom: 17%;
-  z-index: -1;
-  max-width: 100%;
+  bottom: -600px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0c0a08;
+  transition: all 0.7s ease-in-out;
 }
-.nft-img {
-  position: relative;
-  z-index: 2;
-  max-width: 100%;
-  object-fit: contain;
-  margin-bottom: -50px;
-}
-.nft-desc {
-  padding-inline: 20px;
-  padding-top: 70px;
-  padding-bottom: 30px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 10px;
-  background: linear-gradient(90deg, #1b1b1b 5.06%, #1b1812 78.23%);
-  backdrop-filter: blur(8px);
-  border-radius: 12px;
-  width: 100%;
-}
-.nft-desc > h3 {
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 58px;
-  text-transform: uppercase;
-  color: var(--orange);
-}
-.nft-desc > p {
+.pop-text {
+  font-size: 1rem;
+  text-align: left;
   color: white;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 30px;
+  line-height: 1.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80% !important;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
 }
-@media screen and (max-width: 650px) {
-  .nft-desc > h3 {
-    font-size: 24px;
-    line-height: 29px;
+.pop-div h2 {
+  color: var(--orange);
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  align-self: center;
+  padding-bottom: 15px;
+  justify-self: center;
+  font-family: "h1";
+  font-weight: bold;
+}
+.wrapper-character:hover .pop-div {
+  bottom: 51.5%;
+  transform: translateY(50%) translateX(-50%);
+}
+.wrapper-character video {
+  max-width: 100%;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 1694px) {
+  .pop-text {
+    font-size: 0.8rem !important;
   }
-  .nft-desc > p {
-    font-size: 14px;
-    line-height: 21px;
+}
+@media screen and (max-width: 1530px) {
+  .pop-text {
+    font-size: 0.7rem !important;
   }
-  .nft-img {
-    max-height: 400px;
-    max-width: 100%;
+}
+@media screen and (max-width: 1280px) {
+  .pop-text {
+    font-size: 0.9rem !important;
   }
-  .nft-bg {
-    max-width: 300px;
-    height: 500px;
-    left: 50%;
-    transform: translateX(-50%);
+  .wrapper-grid .react-reveal {
+    flex: none !important;
+    width: 350px;
   }
 }

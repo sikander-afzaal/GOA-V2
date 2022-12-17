@@ -1,16 +1,22 @@
+import React from "react";
 import "./NftBox.css";
-
-const NftBox = ({ img, desc: { name, details }, bg }) => {
+function NftBox({ img, desc: { name, details }, poster }) {
   return (
-    <div className="nft-box">
-      <img src={bg} alt="" className="nft-bg" />
-      <img src={img} className="nft-img" alt="" />
-      <div className="nft-desc">
-        <h3 className="trajan">{name}</h3>
-        <p>{details}</p>
+    <div className="wrapper-character">
+      <video
+        playsInline="playsinline"
+        autoPlay
+        muted
+        loop
+        src={img}
+        poster={poster}
+      />
+      <div className="pop-div">
+        <p className="pop-text">{details}</p>
+        <h2>{name}</h2>
       </div>
     </div>
   );
-};
+}
 
 export default NftBox;

@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: var(--max-width);
+  max-width: 1700px;
   flex-direction: column;
   margin-top: 80px;
   padding-inline: 20px;
@@ -27,19 +27,25 @@
 }
 .nft-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100%;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
   row-gap: 0px;
   column-gap: 50px;
   margin-top: 70px;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1285px) {
+  .nft-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    place-items: center;
+    row-gap: 60px;
+  }
+}
+@media screen and (max-width: 961px) {
   .nft-grid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
-    place-items: center;
-    row-gap: 100px;
   }
 }
 @media screen and (max-width: 650px) {
@@ -55,6 +61,6 @@
     line-height: 21px;
   }
   .nft-grid {
-    row-gap: 50px;
+    row-gap: 30px;
   }
 }

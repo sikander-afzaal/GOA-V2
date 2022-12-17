@@ -14,8 +14,8 @@ const Nft = () => {
         </p>
         <div className="nft-grid">
           <NftBox
-            img="/nft-imgs/heim.png"
-            bg="/nft-imgs/heim-bg.png"
+            img="/nft-imgs/Heimdall.mp4"
+            poster="/nft-imgs/heimdall.png"
             desc={{
               name: "heimdall",
               details:
@@ -23,8 +23,8 @@ const Nft = () => {
             }}
           />{" "}
           <NftBox
-            img="/nft-imgs/freya.png"
-            bg="/nft-imgs/freya-bg.png"
+            img="/nft-imgs/Freya.mp4"
+            poster="/nft-imgs/freya.png"
             desc={{
               name: "Freya",
               details:
@@ -32,8 +32,8 @@ const Nft = () => {
             }}
           />
           <NftBox
-            img="/nft-imgs/thor.png"
-            bg="/nft-imgs/thor-bg.png"
+            img="/nft-imgs/Thor.mp4"
+            poster="/nft-imgs/thor.png"
             desc={{
               name: "Thor",
               details:
@@ -41,8 +41,8 @@ const Nft = () => {
             }}
           />
           <NftBox
-            img="/nft-imgs/odin.png"
-            bg="/nft-imgs/odin-bg.png"
+            img="/nft-imgs/Odin.mp4"
+            poster="/nft-imgs/odin.png"
             desc={{
               name: "odin",
               details:

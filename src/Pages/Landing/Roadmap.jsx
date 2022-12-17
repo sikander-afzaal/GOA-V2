@@ -13,28 +13,35 @@ const Roadmap = () => {
 
           <div className="road-box roadbox-1">
             <ul>
-              <li>Development and Launch</li>
-              <li>Full model upgrades</li>
-              <li>NFT Mint</li>
-              <li>Playable Demo</li>
-              <li>Whitepaper</li>
-              <li>Native Token Launch</li>
-              <li>Renting Marketplace</li>
-              <li>Game Launch </li>
+              <li>Development & Testing</li>
+              <li>Character Modeling Upgrades</li>
+              <li>Genesis Legendary NFT Minting</li>
+              <li>Whitepaper release</li>
+              <li>Playable Game Demo</li>
+              <li>$ASG Native Token Launch</li>
+              <li>Official Game Launch</li>
+              <li>Player-vs-Player (PvP) Release</li>
+              <li>Summoning / Sacrifice Launch</li>
+              <li>Rental Marketplace Launch</li>
+              <li>NFT Marketplace Launch</li>
             </ul>
           </div>
           <div className="road-box roadbox-2">
             <ul>
-              <li>PvP Update</li>
-              <li>Balance changes</li>
-              <li>Further game improvements</li>
+              <li>Crafting Introduction</li>
+              <li>New Maps / Environments Release</li>
+              <li>New Gods Introduction</li>
+              <li>Launch Gods of Asgard Subnet - godchain</li>
+              <li>Skill Balance Adjustments</li>
+              <li>Gameplay / Environment Improvements</li>
             </ul>
           </div>
           <div className="road-box roadbox-3">
             <ul>
-              <li>New features</li>
-              <li>VR update</li>
-              <li>and more...</li>
+              <li>Mobile and Console Launch</li>
+              <li>Sandbox Metaverse NFT Mint & Access</li>
+              <li>Tournament of Champions Events</li>
+              <li>...and much more coming...</li>
             </ul>
           </div>
           <div className="active-line-road">
