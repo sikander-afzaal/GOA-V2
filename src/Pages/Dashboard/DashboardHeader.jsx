@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./styles/DashboardHeader.css";
 
 const DashboardHeader = () => {
@@ -5,7 +6,7 @@ const DashboardHeader = () => {
     <div className="container dash-header">
       <header>
         <div className="dash-links">
-          <a href="#">Home</a>
+          <Link to="/">Home</Link>
           <a href="#" style={{ fontWeight: "700", color: "var(--orange)" }}>
             Dashboard
           </a>
