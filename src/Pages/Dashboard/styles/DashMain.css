@@ -12,6 +12,7 @@
   background: #df9200;
   opacity: 0.14;
   filter: blur(283.5px);
+  z-index: -1;
 }
 .blur-circ1 {
   top: 60%;
