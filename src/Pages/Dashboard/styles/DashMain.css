@@ -379,9 +379,17 @@
     gap: 20px;
     border-radius: 20px;
   }
+  .left-swap-row {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .swap-input {
+    width: 100px;
+  }
   .swap-input input,
   .swap-input input::placeholder {
     font-size: 35px;
+    width: 100%;
   }
   .recent,
   .nft-swap-div {
@@ -389,7 +397,7 @@
   }
   .recent h2,
   .nft-swap-div h2 {
-    font-size: 25px;
+    font-size: 23px;
   }
   .bottom-swap-div {
     flex-direction: column;
