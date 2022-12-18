@@ -27,6 +27,8 @@ const DashMain = () => {
 
   return (
     <div className="container dash-main-wrapp">
+      <div className="blur-circ1"></div>
+      <div className="blur-circ2"></div>
       <img src="/breakline.png" alt="" />
       <div className="dash-main-div">
         <div className="top-main-dash">

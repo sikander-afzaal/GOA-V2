@@ -5,6 +5,19 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 100px;
+  position: relative;
+  isolation: isolate;
+}
+.dash-hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: black;
+  opacity: 0.4;
 }
 .dash-hero-div {
   display: flex;

@@ -5,7 +5,7 @@ import Footer from "../../Layout/Footer/Footer";
 
 const Dashboard = () => {
   return (
-    <div className="container">
+    <div style={{ overflowX: "hidden" }} className="container">
       <DashboardHeader />
       <DashboardHero />
       <DashMain />
