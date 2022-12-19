@@ -1,12 +1,21 @@
 .dash-hero {
   width: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);
   background-image: url("/bg1.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 100px;
+  padding-top: 130px;
+  padding-bottom: 130px;
   position: relative;
   isolation: isolate;
+  justify-content: flex-start !important;
+}
+@media screen and (min-width: 2000px) {
+  .dash-hero {
+    min-height: auto;
+    max-height: 800px;
+    height: 100vh;
+  }
 }
 .dash-hero::before {
   content: "";
@@ -154,7 +163,6 @@
 @media screen and (max-width: 1090px) {
   .dash-hero-div {
     flex-direction: column;
-    padding-top: 30px;
     padding-bottom: 80px;
   }
 }

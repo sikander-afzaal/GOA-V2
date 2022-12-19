@@ -357,6 +357,7 @@
   .top-main-dash {
     flex-direction: column-reverse;
   }
+
   .blur-circ1 {
     top: 20%;
   }
@@ -373,6 +374,9 @@
     transform: none;
     left: initial;
     right: initial;
+  }
+  .swap-ico:hover {
+    transform: none;
   }
   .swap-row {
     flex-direction: column;
