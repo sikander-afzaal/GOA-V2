@@ -163,6 +163,9 @@
     margin-top: 50px;
     padding: 150px 20px;
   }
+  .road-line {
+    height: 30px;
+  }
   .roadmap-div {
     max-width: 100%;
     align-items: center;

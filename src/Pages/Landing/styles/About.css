@@ -46,7 +46,7 @@
   width: 100%;
   z-index: -1;
   height: 35px;
-  object-fit: fill;
+  object-fit: cover;
 }
 .line2 {
   position: absolute;
@@ -55,7 +55,7 @@
   width: 100%;
   z-index: -1;
   height: 35px;
-  object-fit: fill;
+  object-fit: cover;
 }
 .circle {
   position: absolute;
