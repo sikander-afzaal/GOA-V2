@@ -3,6 +3,8 @@ import "./styles/Roadmap.css";
 const Roadmap = () => {
   return (
     <div id="roadmap" className="container roadmap-wrapp">
+      <img src="/roadmap-break.png" className="road-line road-line1" />
+      <img src="/roadmap-break.png" className="road-line road-line2" />
       <div className="roadmap-div">
         <h2 className="title trajan">ROADMAP</h2>
         <div className="roadmap-grid">
