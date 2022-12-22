@@ -29,7 +29,7 @@ const DashMain = () => {
     <div className="container dash-main-wrapp">
       <div className="blur-circ1"></div>
       <div className="blur-circ2"></div>
-      <img src="/breakline.png" alt="" />
+      <img src="/roadmap-break.png" alt="" />
       <div className="dash-main-div">
         <div className="top-main-dash">
           <div className="recent">
