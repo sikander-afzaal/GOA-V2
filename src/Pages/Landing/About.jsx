@@ -6,7 +6,7 @@ const About = () => {
     <div id="about" className="container about-wrapp">
       <img src="/about-bg.png" alt="" className="about-bg" />
       <img src="/breakline.png" alt="" className="line1" />
-      <img src="/breakline2.png" alt="" className="line2" />
+      <img src="/breakline.png" alt="" className="line2" />
       <img src="/circle.png" alt="" className="circle" />
       <img src="/triangle.svg" alt="" className="triangle" />
       <img src="/mob-triangle.svg" alt="" className="mob-triangle" />
